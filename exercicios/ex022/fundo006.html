@@ -8,21 +8,30 @@
     <style>
         body{
             height: 100vh;
-            background-color: black;
-            background-image: url(imagens/wallpaper002.jpg);
-            background-repeat: no-repeat;
-            background-position: center center;
             background-size: cover;
+            
+
+            background: black url(imagens/wallpaper002.jpg) no-repeat fixed;
         }
 
         main{
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
             border-radius: 15px;
         }
+
+    
+        /*shorthands
+        
+        color > image > position > repeat > [size *está na ordem mas nao funciona , melhor declarar fora*] > attachment
+        
+        */
+
+
+
     </style>
 </head>
 <main>
