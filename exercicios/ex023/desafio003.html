@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        td , th {
+            padding: 8px;
+            border: 2px solid black ;
+            border-collapse: collapse;
+        }
+
+        .cabecalho{
+            background-color: gray;
+            color: white;
+        }
+
+
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2" class="cabecalho">area</th>
+                <th rowspan="2" class="cabecalho">disciplina</th>
+                <th colspan="2" class="cabecalho">notas</th>
+                <th rowspan="2" class="cabecalho">media</th>
+            </tr>
+            <tr>
+                <th class="cabecalho" >nota 1</th>
+                <th class="cabecalho" >nota 2 </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="4"> <strong>exatas</strong> </td>
+                <td>matematica</td>
+                <td>8</td>
+                <td>7</td>
+                <td>X</td>
+            </tr>
+            <tr>
+                <td>fisica</td>
+                <td>8</td>
+                <td>7</td>
+                <td>X</td>
+            </tr>
+            <tr>
+                <td>quimica</td>
+                <td>8</td>
+                <td>7</td>
+                <td>X</td>
+            </tr>
+            <tr>
+                <td>biologia</td>
+                <td>8</td>
+                <td>7</td>
+                <td>X</td>
+            </tr>
+            <tr>
+                <th colspan="4" class="cabecalho">media de exatas</th>
+                <td class="cabecalho">X</td>
+            </tr>
+            <tr>
+                <td rowspan="2"> <strong>humanas</strong></td>
+                <td>historia</td>
+                <td>8</td>
+                <td>7</td>
+                <td>X</td>
+            </tr>
+            <tr>
+                <td>geografia</td>
+                <td>8</td>
+                <td>7</td>
+                <td>X</td>
+            </tr>
+            <tr>
+                <td colspan="4" class="cabecalho">media de humanas</td>
+                <td class="cabecalho">X</td>
+            </tr>
+        </tbody>
+    </table>    
+</body>
+</html>
