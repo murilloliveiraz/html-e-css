@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+@media screen and (min-width:768px) and (max-width:992px) { /*TABLET*/
+    body {
+        background: url(../imagens/back-tablet.jpg);
+    }
+
+    #phone{display: none;}
+    #pc {display: none;}
+    #print {display: none;}
+    #tablet{display: block;}
+    #tv{display: none; }
+
+}
+
+
+@media print {
+
+    main {
+        border: 2px solid black;
+    }
+
+    main h1 {
+        font-family: 'Courier New', Courier, monospace;
+        text-shadow: none;
+        color: black;
+    }
+
+    main::after{
+        content: 'essa impressao foi feita pelo site criado por murillo oliveira';
+        text-decoration: underline;
+    }
+
+    #phone{display: none;}
+    #pc {display: none;}
+    #print {display: block;}
+    #tablet{display: none;}
+    #tv{display: none; }
+
+}
+
+@media screen and (min-width:992px) and (max-width:1200px) { /*DESKTOP*/
+    body {
+        background: url(../imagens/back-pc.jpg);
+    }
+
+    #phone{display: none;}
+    #pc {display: block;}
+    #print {display: none;}
+    #tablet{display: none;}
+    #tv{display: none; }
+
+}
+
+@media screen and (min-width:1200px) { /*big screens*/
+    body {
+        background: url(../imagens/back-tv.jpg);
+    }
+
+    main {
+        width: 700px;
+    }
+
+    #phone{display: none;}
+    #pc {display: none;}
+    #print {display: none;}
+    #tablet{display: none;}
+    #tv{display: block; }
+
+}
+
+
